@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+
+        <a href="/cadastrar">cadastrar</a>
+        
+            <h1 class="titles">Home</h1>
+
+
+        
+            <div class="tabela">
+                        
+                <table>
+                    <thead>
+                        <tr>
+                            
+                            <th>tarefa</th>
+                            <th>prioridade</th>
+                            <th>data</th>
+                            <th>status</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        
+                        
+                            
+                            
+                            
+                            <% for(let i = 0; i < lista.length; i++){  %>
+                    
+                                <tr class="item">
+                                    <td><%= lista[i].nome %></td>
+                                    <td><%= lista[i].prioridade %></td>
+                                    <td><%= lista[i].data %></td>
+                                    <td><%= lista[i].status %></td>
+                                    <td><a href="/tarefa/<%= lista[i].id %>">Acessar</a></td>
+                                </tr>
+                                   
+                                
+                                <% }  %>
+                            
+                            
+               
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+
+
+    </section>        
+
+ 
+
+
+</body>
+</html>

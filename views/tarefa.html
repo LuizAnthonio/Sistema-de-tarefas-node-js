@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/css/style.css">
+    <title>Tarefa</title>
+</head>
+<body>
+
+    <section>
+        
+            <a href="/">Home</a>
+        
+            <h1 class="title"><%= lista.nome %></h1>
+
+            <div class="container-info">
+
+                <div class="infos-single">
+
+                    <div class="tags">
+                        
+                        <div class="tag-single">
+                           
+                            <p><%= lista.tipo %></p>
+
+                        </div>
+                        
+                      
+                        <div class="tag-single" id="tag-content">
+                           
+                            <p id="tag-single"><%= lista.status %></p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="infos">
+                        <h3>Descrição:</h3>
+                        <br>
+                        <p><%= lista.descricao %></p>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+    </section>
+
+    <script>
+        let tag = document.getElementById("tag-single");
+        let cotainer = document.getElementById("tag-content")
+
+
+        if(tag.textContent === "Não iniciada"){
+            
+            cotainer.style.backgroundColor = "#111111"
+            
+        }else if(tag.textContent === "Fazendo"){
+            
+            cotainer.style.backgroundColor = "#8b8900"
+
+        }else if(tag.textContent === "Feito"){
+            
+            cotainer.style.backgroundColor = "#2d8b2a"
+        }else{
+            
+            cotainer.style.backgroundColor = "#8b1000"
+        }
+            
+    </script>
+
+</body>
+</html>

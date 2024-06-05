@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+
+
+.saidas{
+    color: rgb(126, 0, 0);
+}
+
+.fluxo{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.grafico{
+    width: 100%;
+    max-width: 1200px;
+    height: 40vh;
+    margin: 10px auto;    
+    padding: 2%;
+   
+
+}
+
+
+.titles{
+    height: 17vh;
+}
+
+
+#myChart{
+    width: 1000px;
+    height: 100px;
+    padding: 2%;
+    margin: 10px auto;
+
+}
+
+.fcolum{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-2{
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #ffff;
+}
+
+.icone{
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+}
+
+.desktop{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    background-color: #ffff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    box-shadow: 1px 1px 20px 1px #00000010;
+    backdrop-filter: blur( 20.5px );
+    z-index: 1;
+}
+
+.desktop .opcoes-nav{
+    display: flex;
+
+    
+}
+.desktop .opcoes-nav ul{
+    margin: 10px;
+    text-decoration: none;
+}
+.desktop .opcoes-nav ul a{
+    
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+section{
+    padding: 2%;
+    width: 100%;
+    max-width: 1200px;
+   
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    position: relative;
+    top: 50px;
+    text-align: center;
+
+
+}
+
+.cabecalho .title{
+    font-size: 40px;
+}
+
+.mes{
+    font-weight: 400;
+}
+
+.tabela{
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.parcelados label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+table{
+    
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2%;
+		
+	border-collapse: collapse;
+	margin: auto;
+	
+	
+}
+
+.cards{
+    width: 100%;
+    padding: 2%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 160px;
+    background-color: #EDEDED;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+table tr.item{
+    
+    border-collapse: collapse;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #F3F3F3;
+    margin: 3px;
+    
+
+}
+
+
+
+tbody tr:nth-child(even){
+    background-color: #FCFCFC;
+}
+
+.card-2:nth-child(even){
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.container-resultado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.container-single{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total{
+    text-align: left;
+
+}
+
+
+
+.total .title{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.btn{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 20px;
+    border: 1px solid black;
+
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+thead tr{
+    padding: 2%;
+    position: relative;
+    bottom: 12px;
+}
+
+
+.formulario-1{
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.formulario-1 label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    height: 80px;
+    margin: 0 auto;
+
+}
+
+.textos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+}
+
+
+.formulario-1 label input{
+    width: 60%;
+    height: 40px;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    outline: none;
+    padding: 4px 10px;
+
+}
+.formulario-1 label textarea{
+    width: 60%;
+    height: 100px;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    outline: none;
+    padding: 4px 10px;
+
+}
+.formulario-1 label select{
+    width: 60%;
+    height: 40px;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    outline: none;
+    padding: 4px 10px;
+
+}
+
+.infos-single{
+
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.tags{
+    
+    height: 80px;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    
+}
+
+.tag-single{
+    width: 140px;
+    height: 80%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    background-color: #2d8b2a;
+    padding: 2%;
+}
+
+.container-info{
+    
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #111111;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+.infos{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #2d8b2a;
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+}
